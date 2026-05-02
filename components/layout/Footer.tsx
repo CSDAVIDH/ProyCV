@@ -2,7 +2,6 @@
 
 import { FiCode, FiHeart } from "react-icons/fi";
 import { SOCIAL_LINKS } from "@/lib/data";
-import { VisitCounter } from "@/components/ui";
 
 export default function Footer() {
   return (
@@ -25,14 +24,11 @@ export default function Footer() {
             </span>
           </button>
 
-          {/* Center: copyright + counter */}
-          <div className="flex flex-col items-center gap-2">
-            <p className="text-gray-500 text-sm flex items-center gap-1.5">
-              Feito com <FiHeart className="text-red-400" size={12} /> por David Condori &mdash;{" "}
-              {new Date().getFullYear()}
-            </p>
-            <VisitCounter />
-          </div>
+          {/* Center: copyright */}
+          <p className="text-gray-500 text-sm flex items-center gap-1.5">
+            Feito com <FiHeart className="text-red-400" size={12} /> por David Condori &mdash;{" "}
+            {new Date().getFullYear()}
+          </p>
 
           {/* Social Links */}
           <div className="flex items-center gap-3">
