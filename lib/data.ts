@@ -267,17 +267,17 @@ export const ACADEMIC_COURSES: string[] = [
 ];
 
 export const CERTIFICATIONS: Certification[] = [
-  { name: "Análise e Visualização de Dados com Power BI", issuer: "ITEC", year: "2025", category: "Dados", color: "#f59e0b", icon: "📊" },
-  { name: "Programação FullStack (NextJS, Tailwind, TypeScript)", issuer: "Inova Code", year: "2023", category: "Dev", color: "#3b82f6", icon: "💻" },
-  { name: "Ciências Sociais com Python", issuer: "UGRAM", year: "2024", category: "Python", color: "#10b981", icon: "🐍" },
-  { name: "Scrum Foundation", issuer: "CertiProf", year: "2021", category: "Ágil", color: "#8b5cf6", icon: "⚡" },
-  { name: "Automação de Testes com Selenium", issuer: "Prática Acadêmica", year: "—", category: "QA", color: "#ef4444", icon: "🤖" },
-  { name: "Gestão de Testes com TestLink", issuer: "Prática Acadêmica", year: "—", category: "QA", color: "#ef4444", icon: "📋" },
-  { name: "Redes GPON e Fibra Óptica", issuer: "RedesTel", year: "2022", category: "Redes", color: "#06b6d4", icon: "🌐" },
-  { name: "Design de Rede Corporativa", issuer: "Chiked", year: "2021", category: "Redes", color: "#06b6d4", icon: "🔌" },
-  { name: "Programação Painel Honeywell Vista", issuer: "Unid", year: "2020", category: "Segurança", color: "#f97316", icon: "🔒" },
-  { name: "Ofimática Avançada", issuer: "Quimeras", year: "2020", category: "Office", color: "#64748b", icon: "📝" },
-  { name: "Português sem Complicações", issuer: "Fundação Bradesco", year: "2025", category: "Idioma", color: "#10b981", icon: "🇧🇷" },
+  { name: "Análise e Visualização de Dados com Power BI", issuer: "ITEC", year: "2025", color: "#f59e0b", icon: "📊" },
+  { name: "Programação FullStack (NextJS, Tailwind, TypeScript)", issuer: "Inova Code", year: "2023", color: "#3b82f6", icon: "💻" },
+  { name: "Ciências Sociais com Python", issuer: "UGRAM", year: "2024", color: "#10b981", icon: "🐍" },
+  { name: "Scrum Foundation", issuer: "CertiProf", year: "2021", color: "#8b5cf6", icon: "⚡" },
+  { name: "Automação de Testes com Selenium", issuer: "Prática Acadêmica", year: "—", color: "#ef4444", icon: "🤖" },
+  { name: "Gestão de Testes com TestLink", issuer: "Prática Acadêmica", year: "—", color: "#ef4444", icon: "📋" },
+  { name: "Redes GPON e Fibra Óptica", issuer: "RedesTel", year: "2022", color: "#06b6d4", icon: "🌐" },
+  { name: "Design de Rede Corporativa", issuer: "Chiked", year: "2021", color: "#06b6d4", icon: "🔌" },
+  { name: "Programação Painel Honeywell Vista", issuer: "Unid", year: "2020", color: "#f97316", icon: "🔒" },
+  { name: "Ofimática Avançada", issuer: "Quimeras", year: "2020", color: "#64748b", icon: "📝" },
+  { name: "Português sem Complicações", issuer: "Fundação Bradesco", year: "2025", color: "#10b981", icon: "🇧🇷" },
 ];
 
 // ─── Contact ──────────────────────────────────────────────────────────────────

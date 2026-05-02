@@ -71,7 +71,6 @@ export interface Certification {
   name: string;
   issuer: string;
   year: string;
-  category: string;
   color: string;
   icon: string;
 }
