@@ -9,12 +9,12 @@ export default function Footer() {
       className="py-10 border-t"
       style={{ borderColor: "rgba(255,255,255,0.06)", background: "rgba(10,15,30,0.9)" }}
     >
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex flex-col md:flex-row items-center justify-between gap-6">
+      <div className="container mx-auto">
+        <div className="flex flex-col md:flex-row items-center justify-center md:justify-between gap-6 text-center md:text-left">
           {/* Brand */}
           <button
             onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-            className="flex items-center gap-2"
+            className="flex items-center gap-2 justify-center md:justify-start"
           >
             <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-blue-500 to-emerald-500 flex items-center justify-center">
               <FiCode className="text-white text-sm" />
@@ -31,7 +31,7 @@ export default function Footer() {
           </p>
 
           {/* Social Links */}
-          <div className="flex items-center gap-3">
+          <div className="flex items-center gap-3 justify-center md:justify-end">
             {SOCIAL_LINKS.map(({ icon: Icon, href, label, color }) => (
               <a
                 key={label}

@@ -22,6 +22,10 @@ Abra [http://localhost:3000](http://localhost:3000).
 
 Crie um arquivo `.env.local` na raiz com as credenciais do Upstash (ver `.env.local.example`).
 
+- `UPSTASH_REDIS_REST_URL`
+- `UPSTASH_REDIS_REST_TOKEN`
+- `COUNTAPI_NAMESPACE` (opcional, usado como fallback se Upstash não estiver configurado)
+
 ## Deploy
 
 Recomendado: [Vercel](https://vercel.com). Conecte o repositório e adicione as variáveis de ambiente no painel.

@@ -10,7 +10,7 @@ export default function About() {
   const { ref, inView } = useInView({ triggerOnce: true, threshold: 0.1 });
 
   return (
-    <section id="sobre" className="py-24 relative">
+    <section id="sobre" className="py-16 md:py-24 relative">
       <div
         className="absolute inset-0 pointer-events-none"
         style={{
@@ -19,10 +19,10 @@ export default function About() {
         }}
       />
 
-      <div ref={ref} className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div ref={ref} className="container mx-auto">
         <SectionHeader eyebrow="Quem sou eu" title="Sobre Mim" inView={inView} />
 
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
+        <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
           {/* Bio + Qualities */}
           <motion.div
             initial={{ opacity: 0, x: -40 }}
@@ -30,7 +30,7 @@ export default function About() {
             transition={{ duration: 0.7, delay: 0.2 }}
           >
             <div
-              className="rounded-2xl p-8 mb-6"
+              className="rounded-2xl p-5 sm:p-8 mb-6"
               style={{ background: "rgba(13,21,38,0.8)", border: "1px solid rgba(255,255,255,0.06)" }}
             >
               <p className="text-gray-300 leading-relaxed mb-5 text-base">
@@ -56,7 +56,7 @@ export default function About() {
               <p className="text-gray-400 text-sm font-medium mb-4 uppercase tracking-wider">
                 Qualidades pessoais
               </p>
-              <div className="grid grid-cols-2 gap-3">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                 {QUALITIES.map((q, i) => (
                   <motion.div
                     key={q}
@@ -78,7 +78,7 @@ export default function About() {
             initial={{ opacity: 0, x: 40 }}
             animate={inView ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.7, delay: 0.3 }}
-            className="grid grid-cols-2 gap-4"
+            className="grid grid-cols-1 sm:grid-cols-2 gap-4"
           >
             {HIGHLIGHTS.map(({ icon: Icon, title, desc, color, bg, border }, i) => (
               <motion.div

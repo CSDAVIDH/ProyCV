@@ -10,7 +10,7 @@ export default function Experience() {
   const { ref, inView } = useInView({ triggerOnce: true, threshold: 0.05 });
 
   return (
-    <section id="experiencia" className="py-24 relative">
+    <section id="experiencia" className="py-16 md:py-24 relative">
       <div
         className="absolute inset-0 pointer-events-none"
         style={{
@@ -19,13 +19,13 @@ export default function Experience() {
         }}
       />
 
-      <div ref={ref} className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div ref={ref} className="container mx-auto">
         <SectionHeader eyebrow="Trajetória profissional" title="Experiência" inView={inView} />
 
         <div className="relative max-w-4xl mx-auto">
           {/* Timeline line */}
           <div
-            className="absolute left-6 md:left-1/2 top-0 bottom-0 w-px -translate-x-px"
+            className="absolute left-4 md:left-1/2 top-0 bottom-0 w-px -translate-x-0 md:-translate-x-1/2"
             style={{
               background:
                 "linear-gradient(180deg, #3b82f6 0%, #10b981 33%, #8b5cf6 66%, #f59e0b 100%)",
@@ -39,13 +39,13 @@ export default function Experience() {
               initial={{ opacity: 0, y: 40 }}
               animate={inView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.6, delay: i * 0.15 }}
-              className={`relative flex flex-col md:flex-row gap-6 mb-12 ${
+              className={`relative flex flex-col md:flex-row gap-4 sm:gap-6 mb-8 md:mb-12 ${
                 i % 2 === 0 ? "md:flex-row" : "md:flex-row-reverse"
               }`}
             >
               {/* Timeline dot */}
               <div
-                className="absolute left-6 md:left-1/2 top-6 w-3 h-3 rounded-full -translate-x-1.5 z-10"
+                className="absolute left-4 md:left-1/2 top-6 w-3 h-3 rounded-full -translate-x-1.5 md:-translate-x-1/2 z-10"
                 style={{
                   background: exp.color,
                   boxShadow: `0 0 12px ${exp.color}88, 0 0 0 3px #0a0f1e, 0 0 0 5px ${exp.color}55`,
@@ -55,9 +55,9 @@ export default function Experience() {
               <div className="hidden md:block flex-1" />
 
               {/* Card */}
-              <div className="flex-1 pl-14 md:pl-0">
+              <div className="flex-1 pl-12 md:pl-0">
                 <div
-                  className="card-hover rounded-2xl p-6"
+                  className="card-hover rounded-2xl p-4 sm:p-6"
                   style={{ background: "rgba(13,21,38,0.8)", border: `1px solid ${exp.color}30` }}
                 >
                   {/* Header */}

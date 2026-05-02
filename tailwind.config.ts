@@ -30,6 +30,28 @@ const config: Config = {
           500: "#374151",
         },
       },
+      screens: {
+        xs: "360px",
+        sm: "640px",
+        md: "768px",
+        lg: "1024px",
+        xl: "1280px",
+        "2xl": "1536px",
+        "3xl": "1920px",
+      },
+      container: {
+        center: true,
+        padding: "1rem",
+        screens: {
+          xs: "100%",
+          sm: "640px",
+          md: "768px",
+          lg: "1024px",
+          xl: "1280px",
+          "2xl": "1400px",
+          "3xl": "1680px",
+        },
+      },
       fontFamily: {
         sans: ["var(--font-inter)", "system-ui", "sans-serif"],
         mono: ["var(--font-mono)", "monospace"],

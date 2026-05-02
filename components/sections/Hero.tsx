@@ -43,10 +43,10 @@ export default function Hero() {
         ))}
       </div>
 
-      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-24 pb-16">
-        <div className="flex flex-col lg:flex-row items-center gap-16">
+      <div className="relative z-10 container mx-auto pt-20 sm:pt-24 pb-12 sm:pb-16">
+        <div className="flex flex-col lg:flex-row items-center gap-8 lg:gap-16">
           {/* Text */}
-          <div className="flex-1 text-center lg:text-left">
+          <div className="flex-1 text-center lg:text-left max-w-2xl lg:max-w-none mx-auto lg:mx-0">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
@@ -62,7 +62,7 @@ export default function Hero() {
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.1 }}
-              className="text-4xl sm:text-5xl lg:text-6xl font-black tracking-tight mb-4 leading-tight"
+              className="text-3xl sm:text-4xl lg:text-6xl font-black tracking-tight mb-4 leading-tight"
             >
               David <span className="gradient-text">Condori</span>
             </motion.h1>
@@ -71,7 +71,7 @@ export default function Hero() {
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.2 }}
-              className="text-xl sm:text-2xl font-semibold text-gray-300 mb-4"
+              className="text-lg sm:text-xl font-semibold text-gray-300 mb-4"
             >
               Engenheiro de Sistemas &{" "}
               <span
@@ -90,7 +90,7 @@ export default function Hero() {
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.3 }}
-              className="text-gray-400 text-base sm:text-lg max-w-xl leading-relaxed mb-8 mx-auto lg:mx-0"
+              className="text-gray-400 text-base sm:text-lg max-w-full sm:max-w-xl leading-relaxed mb-8 mx-auto lg:mx-0"
             >
               Apaixonado por desenvolvimento backend, análise de dados e forense digital.
               Construindo soluções eficientes e escaláveis com tecnologias modernas.
@@ -101,7 +101,7 @@ export default function Hero() {
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.4 }}
-              className="flex flex-wrap gap-4 justify-center lg:justify-start mb-10"
+              className="flex flex-col sm:flex-row flex-wrap gap-4 justify-center lg:justify-start mb-10"
             >
               <button onClick={() => scrollTo("#contato")} className="btn-primary">
                 Entrar em contato <FiArrowRight />
@@ -147,7 +147,7 @@ export default function Hero() {
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="flex-shrink-0"
+            className="flex-shrink-0 w-full max-w-sm sm:w-80 mx-auto lg:mx-0"
           >
             <div className="relative">
               <div
@@ -158,13 +158,13 @@ export default function Hero() {
                 }}
               />
               <div
-                className="relative w-72 sm:w-80 rounded-3xl p-6 overflow-hidden"
+                className="relative rounded-3xl p-5 sm:p-6 overflow-hidden"
                 style={{ background: "rgba(13,21,38,0.95)", border: "1px solid rgba(59,130,246,0.2)" }}
               >
                 {/* Avatar */}
                 <div className="flex items-center gap-4 mb-6">
                   <div
-                    className="w-16 h-16 rounded-2xl flex items-center justify-center text-2xl font-black text-white"
+                    className="w-16 h-16 rounded-2xl flex items-center justify-center text-2xl font-black text-white flex-shrink-0"
                     style={{ background: "linear-gradient(135deg, #2563eb, #10b981)" }}
                   >
                     DC
@@ -189,7 +189,7 @@ export default function Hero() {
                 </div>
 
                 {/* Stats */}
-                <div className="grid grid-cols-3 gap-3 mb-5">
+                <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 mb-5">
                   {HERO_STATS.map(({ label, value }) => (
                     <div
                       key={label}
@@ -223,7 +223,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.9, duration: 0.6 }}
-          className="flex justify-center mt-14 mb-8"
+          className="flex justify-center mt-10 md:mt-14 mb-8"
         >
           <VisitCounter variant="hero" />
         </motion.div>
@@ -233,7 +233,7 @@ export default function Hero() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 1.2 }}
-          className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2"
+          className="hidden sm:flex absolute bottom-8 left-1/2 -translate-x-1/2 flex-col items-center gap-2"
         >
           <span className="text-gray-600 text-xs">Role para baixo</span>
           <div
