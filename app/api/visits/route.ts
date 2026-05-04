@@ -9,7 +9,7 @@ declare global {
   // eslint-disable-next-line no-var
   var _visitCount: number | undefined;
 }
-if (global._visitCount === undefined) global._visitCount = 0;
+if (global._visitCount === undefined) global._visitCount = 15869;
 
 function isUpstashConfigured() {
   return Boolean(process.env.UPSTASH_REDIS_REST_URL && process.env.UPSTASH_REDIS_REST_TOKEN);
